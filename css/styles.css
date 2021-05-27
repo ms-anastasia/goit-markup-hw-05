@@ -14,6 +14,7 @@
   --background-color: #f5f4fa;
   --shadow-color: #eeeeee;
   --header-border-color: #ececec;
+  --link-color: #afb1b8;
 }
 body {
   background-color: var(--primary-white-colour);
@@ -111,16 +112,31 @@ header {
 .main-header-contacts .item + .item {
   margin-left: 50px;
 }
+.item.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header-contacts {
   color: var(--main-text-colour);
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14px;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-colour);
+}
+.svg-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.svg-icon:hover,
+.svg-icon:focus {
+  fill: var(--accent-colour);
 }
 /* main section */
 .section {
@@ -183,28 +199,15 @@ header {
 .benefit {
   min-width: 270px;
 }
-.benefit::before {
-  content: '';
-  display: block;
+.backgroung-img {
+  width: 270px;
   height: 120px;
-  margin-bottom: 30px;
-
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--background-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
-.benefit:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
-}
-.benefit:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-}
-.benefit:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-}
-.benefit:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
-}
+
 /* Чем мы занимаемся */
 .flex-item {
   display: flex;
@@ -261,7 +264,38 @@ header {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 16px;
 }
+.social-links {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social-link-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link-button:not(:first-child) {
+  margin-left: 10px;
+}
+.social-link-button:hover,
+.social-link-button:focus {
+  background-color: var(--accent-colour);
+}
+.social-link-button:hover .icon-link,
+.social-link-button:focus .icon-link {
+  fill: var(--primary-white-colour);
+}
+
+.icon-link {
+  fill: var(--link-color);
+}
+
 /* Footer */
 .footer {
   background-color: var(--footer-background);
@@ -334,6 +368,10 @@ header {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+.box-content:hover,
+.box-content:focus {
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .box-content {
   padding: 20px 24px;
