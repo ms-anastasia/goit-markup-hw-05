@@ -157,6 +157,9 @@ header {
 
   height: 600px;
   max-width: 1600px;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -168,8 +171,7 @@ header {
 }
 .hero-content {
   width: 696px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -342,10 +344,6 @@ header {
   fill: var(--link-color);
 }
 
-.company-logo.shadow {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 .clients-list:hover,
 .clients-list:focus {
   border-color: var(--accent-colour);
@@ -386,7 +384,6 @@ header {
 }
 .join-us {
   margin-left: 70px;
-  padding-top: 12px;
 }
 .join-title {
   color: var(--primary-white-colour);
@@ -396,8 +393,10 @@ header {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 .container.footer-flex {
   display: flex;
+  align-items: baseline;
 }
 .footer-social-links {
   display: flex;
