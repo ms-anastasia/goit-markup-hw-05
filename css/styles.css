@@ -394,10 +394,10 @@ header {
   margin-bottom: 20px;
 }
 
-/* .container.footer-flex {
+.container.footer-flex {
   display: flex;
   align-items: baseline;
-} */
+}
 .footer-social-links {
   display: flex;
 }
