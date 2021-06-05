@@ -122,6 +122,7 @@ img {
 .nav-item:hover,
 .nav-item:focus {
   color: var(--accent-colour);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Контанкты */
 .main-header-contacts {
@@ -151,6 +152,7 @@ img {
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-colour);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-icon {
   margin-right: 10px;
@@ -159,6 +161,7 @@ img {
 .svg-icon:hover,
 .svg-icon:focus {
   fill: var(--accent-colour);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* main section */
 .section {
@@ -223,6 +226,7 @@ img {
 .button:hover,
 .button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Бекдроп */
 .backdrop {
@@ -268,12 +272,14 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: transparent;
+  border: solid 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  background-color: var(--primary-white-colour);
 
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 /* Преимущества */
 .flex-item .benefit + .benefit {
@@ -378,10 +384,12 @@ img {
 .team-link:hover,
 .team-link:focus {
   background-color: var(--accent-colour);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover .icon-link,
 .team-link:focus .icon-link {
   fill: var(--primary-white-colour);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link {
   fill: var(--link-color);
@@ -414,10 +422,12 @@ img {
 .clients-list:hover,
 .clients-list:focus {
   border-color: var(--accent-colour);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list:hover .company-logo,
 .clients-link:focus .company-logo {
   fill: var(--accent-colour);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Footer */
 .footer {
@@ -448,6 +458,7 @@ img {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-colour);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-us {
   margin-left: 70px;
@@ -478,6 +489,7 @@ img {
 .footer-svg:hover,
 .footer-svg:focus {
   background-color: var(--accent-colour);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-svg {
   border-radius: 50%;
@@ -549,6 +561,7 @@ img {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product-thumb {
   position: relative;
